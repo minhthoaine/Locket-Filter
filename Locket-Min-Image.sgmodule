@@ -1,8 +1,0 @@
-#!name=Locket Min - Image
-#!desc=Chỉ thay ảnh popup Feature Discovery; không thay đổi trạng thái Gold.
-
-[MITM]
-hostname = %APPEND% firebaseremoteconfig.googleapis.com
-
-[Script]
-locket_min_image = type=http-response,pattern=^https?:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-.*,script-path=https://raw.githubusercontent.com/minhthoaine/Locket-Filter/main/Locket-Min-Image.js,requires-body=true,max-size=524288,timeout=30
